@@ -1,0 +1,8 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "Marabou\\out\\build\\x64-Debug",
+      "Marabou\\out\\install\\x64-Debug"
+    ]
+  }
+}
