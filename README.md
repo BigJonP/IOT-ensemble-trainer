@@ -70,13 +70,13 @@ Once all the configurations have been specified, click on `Run` and the model wi
 
 
 ### Example simple bagging (no neural networks and no verification)
-<video src="media/simple_bagging.mp4" width="420" height="300" controls></video>
+!["media/simple_bagging.gif"](media/simple_bagging.gif)
 
 ### Example bagging with neural networks and verification
-<video src="media/bagging_verification.mp4" width="420" height="300" controls></video>
+!["media/bagging_verification.gif"](media/bagging_verification.gif)
 
 ### Example stacking
-<video src="media/stacking.mp4" width="420" height="300" controls></video>
+!["media/stacking.gif"](media/stacking.gif)
 
 ### Example boosting
-<video src="media/boosting.mp4" width="420" height="300" controls></video>
+!["media/boosting.gif"](media/boosting.gif)
