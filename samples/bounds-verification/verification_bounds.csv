@@ -1,0 +1,2 @@
+"greater_than","feature","less_than","truth_category","false_category_1","false_category_2","false_category_3"
+"2.1","Header_Length","90.1","DoS-SYN_Flood","DDoS-PSHACK_Flood","BenignTraffic","MITM-ArpSpoofing"

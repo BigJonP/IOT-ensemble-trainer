@@ -1,31 +1,34 @@
 import tkinter as tk
 
 from config import config
-from ui.model_selection import launch_model_selection
-from model_infra.model import Model
-from model_infra.nnverify import NNVerify
+from ui.config_setup import launch_ui_config
 
 
-def start_ui():
+def launch_ui():
+
     root = tk.Tk()
-    root.geometry("700x550")
+    pad = 15
+    root.geometry(
+        f"{root.winfo_screenwidth() - pad}x{root.winfo_screenheight() - pad}+0+0"
+    )
     root.title("IOT Ensemble Trainer")
+    _geom = "200x200+0+0"
 
-    top_frame = tk.Frame(root)
-    top_frame.pack(side=tk.TOP)
+    def toggle_geom():
+        nonlocal _geom
+        geom = root.winfo_geometry()
+        root.geometry(_geom)
+        _geom = geom
 
-    bot_frame = tk.Frame(root)
-    bot_frame.pack(side=tk.BOTTOM)
+    root.bind("<Escape>", toggle_geom)
 
-    launch_model_selection(top_frame, bot_frame, config)
+    main = tk.Frame(root)
+    main.pack(side=tk.TOP)
+
+    launch_ui_config(main, config)
 
     root.mainloop()
 
 
 if __name__ == "__main__":
-    # start_ui()
-
-    test_model = Model(config)
-    test_model.train_model()
-    verify_obj = NNVerify(test_model)
-    verify_obj.prepare_postcondition()
+    launch_ui()
