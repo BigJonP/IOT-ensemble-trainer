@@ -3,3 +3,4 @@ pandas
 scikit-learn
 z3-solver
 tensorflow
+keras
