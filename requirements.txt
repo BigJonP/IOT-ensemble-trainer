@@ -2,3 +2,4 @@ numpy
 pandas
 scikit-learn
 z3-solver
+tensorflow
